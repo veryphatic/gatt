@@ -1,7 +1,7 @@
 package option
 
 import (
-	"github.com/paypal/gatt"
+	"github.com/cfreeman/gatt"
 	"github.com/paypal/gatt/linux/cmd"
 )
 

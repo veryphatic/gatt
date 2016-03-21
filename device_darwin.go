@@ -80,6 +80,11 @@ func (d *device) Init(f func(Device, State)) error {
 	return nil
 }
 
+func (d *device) Stop() error {
+	// TODO: Implement.
+	return nil
+}
+
 func (d *device) Advertise(a *AdvPacket) error {
 	rsp := d.sendReq(8, xpc.Dict{
 		"kCBAdvDataAppleMfgData": a.b, // not a.Bytes(). should be slice
